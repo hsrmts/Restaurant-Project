@@ -1,0 +1,451 @@
+/*Global*/
+	body {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		font-family: Roboto;
+		line-height: 1.7em;
+		color: white;
+		background-color: #333;
+
+	}
+
+	html {
+		scroll-behavior: smooth;
+	}
+
+/*Main*/
+	main {
+		background-color: #C40E20;
+		width: 900px;
+		height: auto;
+		margin: 0 auto;
+	}
+
+/*Header*/
+	.assetnyc {
+		background-color: #C40E20;
+		position: sticky;
+		top: 0;
+	}
+
+	header {
+		z-index: 999;
+		max-height: 150px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		background-image: url(assettext.png);
+			background-size: 650px;
+			background-position: center;
+			background-repeat: no-repeat;
+	}
+
+/*Image*/
+	/*I do not know why but this "}" at the bottom is keeping the whole carousel together*/
+	/*img {
+		width: 100%;
+		height: 400px;
+		object-fit: cover;
+		object-position: 50% 50%;*/
+	}
+
+/*Carousel*/
+	.carousel {
+		width: 100%;
+		height: 20px;
+	    position: relative;
+	    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+	    margin-top: 26px;
+	}
+
+	.carousel-inner {
+		height: 400px;
+		max-width: 100%;
+	    position: relative;
+	    overflow: hidden;
+	    width: 100%;
+	}
+
+	.carousel-open:checked + .carousel-item {
+	    position: static;
+	    opacity: 100;
+	}
+
+	.carousel-item {
+	    position: absolute;
+	    opacity: 0;
+	    -webkit-transition: opacity 0.6s ease-out;
+	    transition: opacity 0.6s ease-out;
+	}
+
+	.carousel-item img {
+	    display: block;
+	    height: auto;
+	    max-width: 100%;
+	}
+
+	.carousel-control {
+	    background: rgba(0, 0, 0, 0.28);
+	    border-radius: 50%;
+	    color: #fff;
+	    cursor: pointer;
+	    display: none;
+	    font-size: 40px;
+	    height: 40px;
+	    line-height: 35px;
+	    position: absolute;
+	    top: 50%;
+	    -webkit-transform: translate(0, -50%);
+	    cursor: pointer;
+	    -ms-transform: translate(0, -50%);
+	    transform: translate(0, -50%);
+	    text-align: center;
+	    width: 40px;
+	    z-index: 10;
+	}
+
+	.carousel-control.prev {
+	    left: 2%;
+	}
+
+	.carousel-control.next {
+	    right: 2%;
+	}
+
+	.carousel-control:hover {
+	    background: rgba(0, 0, 0, 0.8);
+	    color: #aaaaaa;
+	}
+
+	#carousel-1:checked ~ .control-1,
+	#carousel-2:checked ~ .control-2,
+	#carousel-3:checked ~ .control-3 {
+	    display: block;
+	}
+
+	.carousel-indicators {
+	    list-style: none;
+	    margin: 0;
+	    padding: 0;
+	    position: absolute;
+	    bottom: 2%;
+	    left: 0;
+	    right: 0;
+	    text-align: center;
+	    z-index: 10;
+	}
+
+	.carousel-indicators li {
+	    display: inline-block;
+	    margin: 0 5px;
+	}
+
+	.carousel-bullet {
+	    color: #fff;
+	    cursor: pointer;
+	    display: block;
+	    font-size: 35px;
+	}
+
+	.carousel-bullet:hover {
+	    color: #aaaaaa;
+	}
+
+	#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+	#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+	#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+	    color: #C40E20;
+	}
+
+	#title {
+	    width: 100%;
+	    position: absolute;
+	    padding: 0px;
+	    margin: 0px auto;
+	    text-align: center;
+	    font-size: 27px;
+	    color: rgba(255, 255, 255, 1);
+	    font-family: 'Open Sans', sans-serif;
+	    z-index: 9999;
+	    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+	}
+
+/*Nav*/
+	.navbar {
+		position: sticky;
+		top: 5em;
+		padding-bottom: 10px;
+	}
+
+	nav ul {
+		background-color: #C40E20;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		justify-content: center;
+	}
+
+	.headlink {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		padding: 5px 0 5px 0;
+		font-size: 0.85em;
+		text-transform: uppercase;
+		font-weight: bold;
+		border-top: 2px solid white;
+		border-bottom: 2px solid white;
+	}
+
+	nav a {
+		transition: all 0.3s ease 0s;
+		padding: 3px 15px 3px 15px;
+		color: white;
+	}
+
+	nav a:hover {
+		background-color: rgba(255, 255, 255, 0.3);
+		border-radius: 7px;
+		color: #FDCD49;
+	}
+
+/*Intro*/
+	.intro {
+		padding: 100px 0;
+		text-align: left;
+		background-image: linear-gradient(to right, #C40E20, 50%, transparent),
+			url("cup.png");
+	}
+
+	.intro p {
+		margin-left: 50px;
+		padding-right: 60px;
+		font-size: 1.3em;
+		line-height: 1.6em;
+	}
+
+/*Space*/
+	.space1 {
+		height: 45px;
+		background-color: #C40E20;
+	}
+
+/*Hours*/
+	.hours {
+		padding: 20px 0;
+		text-align: right;
+		background-image: linear-gradient(to right, transparent, 50%, #C40E20),
+			url("sushi.png");
+	}
+
+	.hours h2 {
+		color: #FDCD49;
+		margin-right: 50px;
+		text-decoration: underline;
+	}
+
+	.hours h3 {
+		margin: 0;
+		padding: 0;
+		text-decoration: underline;
+	}
+
+	.hours ul {
+		margin-right: 50px;
+		list-style: none;
+	}
+
+/*DIV for maps and reservation*/
+	.twoform {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin: auto;
+		padding: 20px 20px 0 0;
+	}
+
+/*Maps*/
+	.maps {
+		float: left;
+		padding-top: 25px;
+		width: fit-content;
+		text-align: center;
+		margin-left: 50px;
+		max-width: 75%;
+		max-height: auto;
+	}
+
+	.maps h2 {
+		margin: 0;
+		padding-bottom: 5px;
+		text-decoration: underline;
+	}
+
+/*Form*/
+	.res {
+		margin-right: 50px;
+		padding-top: 25px;
+	}
+
+	.res h2 {
+		text-align: center;
+		margin: 0;
+		padding-bottom: 5px;
+		text-decoration: underline;
+	}
+
+	.res p, .firstname {
+		padding: 12px 0;
+	}
+
+	form {
+		height: 470px;
+		border: 3px solid black;
+		background-color: #333;
+		padding: 15px;
+	}
+
+	input[type="submit"] {
+		background-color: #FDCD49;
+		color: black;
+		font-size: 0.8em;
+		text-transform: uppercase;
+		font-weight: bold;
+		padding: 10px 20px;
+		border: 5px solid white;
+		border-radius: 2px;
+	}
+
+	input[type="text"], select {
+  		background-color: #000;
+ 		border: 5px solid white;
+  		padding: 10px 20px;
+  		color:#FDCD49;
+	}
+
+	select{
+  		background-color: #FDCD49;
+  		color: black;
+	}
+
+/*Space*/
+	.space2 {
+		height: 6px;
+		background-color: #C40E20;
+	}
+
+/*Event*/
+	.event {
+		padding: 40px 0 60px 0;
+		text-align: left;
+		background-image: linear-gradient(to right, #C40E20, 50%, transparent),
+			url("room.png");
+	}
+
+	.event img {
+		object-position: bottom;
+	}
+
+	.event h2 {
+		color: #FDCD49;
+		margin-left: 50px;
+		text-decoration: underline;
+	}
+
+	.event h3 {
+		margin-left: 50px;
+		margin-bottom: 5px;
+		text-decoration: underline;
+	}
+
+	.event p {
+		margin: 0;
+		padding: 0;
+		margin-left: 50px;
+		padding-right: 60px;
+		padding-bottom: 10px;
+	}
+
+	.button {
+		padding: 7px 11px 7px 11px;
+		position: absolute;
+		right: 47%;
+		font-size: 1.5em;
+		border: 2px solid #FDCD49;
+		border-radius: 5px;
+		background-color: transparent;
+		color: white;
+		transition: all 0.3s ease 0s;
+	}
+
+	.button:hover {
+		background-color: rgba(255, 255, 255, 0.3);
+		color: #FDCD49;
+	}
+
+/*Space*/
+	.space3 {
+		height: 80px;
+		background-color: #C40E20;
+	}
+
+/*Footer*/
+	footer {
+		display: flex;
+		justify-content: space-between;
+		background-color: #464646;
+		color: white;
+		font-size: 0.85em;
+		padding-left: 1.5em;
+		padding-right: 1.5em;
+	}
+
+	.social {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.social img {
+		max-height: 30px;
+	}
+
+	.social a {
+		padding-top: 10px;
+		padding-left: 10px;
+	}
+
+/*Headings*/
+	h1 {
+		letter-spacing: 2px;
+		font-family: Anton;
+		text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+		font-weight: normal;
+		color: white;
+		margin: 0;
+		text-align: center;
+		font-size: 3em;
+		line-height: 1em;
+	}
+
+	h2 {
+		font-family: Roboto;
+		font-weight: normal;
+		color: #FDCD49;
+	}
+
+	h3 {
+		font-family: Roboto;
+		font-weight: normal;
+	}
+
+/*Links*/
+	a {
+		text-decoration: none;
+		color: white;
+	}
+
+	a:hover {
+		color: #FDCD49;
+	}
