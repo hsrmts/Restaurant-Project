@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Seremetis - Restaurant Project</title>
+</head>
+<body>
+<main>
+	<header class="assetnyc">
+		<h1>Asset NYC</h1>
+	</header>
+
+	<div  id="jumptop" class="carousel">
+	    <div class="carousel-inner">
+
+	        <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+	        <div class="carousel-item">
+	            <img src="car1.png">
+	        </div>
+
+	        <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+	        <div class="carousel-item">
+	            <img src="car2.png">
+	        </div>
+
+	        <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+	        <div class="carousel-item">
+	            <img src="car3.png">
+	        </div>
+
+	        <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+	        <label for="carousel-2" class="carousel-control next control-1">›</label>
+	        <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+	        <label for="carousel-3" class="carousel-control next control-2">›</label>
+	        <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+	        <label for="carousel-1" class="carousel-control next control-3">›</label>
+	        <ol class="carousel-indicators">
+	            <li>
+	                <label for="carousel-1" class="carousel-bullet">•</label>
+	            </li>
+	            <li>
+	                <label for="carousel-2" class="carousel-bullet">•</label>
+	            </li>
+	            <li>
+	                <label for="carousel-3" class="carousel-bullet">•</label>
+	            </li>
+	        </ol>
+    	</div>
+	</div>
+	
+	<div class="navbar">
+		<nav>
+			<ul>
+				<li class="headlink"><a href="#jumptop">Home</a></li>
+				<li class="headlink"><a href="https://resy.com/cities/ny/asset?seats=2&date=2023-11-06">Reservations</a></li>
+				<li class="headlink"><a href="https://www.assetrestaurant.com/_files/ugd/54a4cd_e8744120ae12431d943d20bbdbdc660d.pdf">Menu</a></li>
+				<li class="headlink"><a href="https://www.assetrestaurant.com/_files/ugd/54a4cd_4a671011fc56450b993b89f0b03289cd.pdf">Wine</a></li>
+				<li class="headlink"><a href="https://www.google.com/maps/place/329+Columbus+Ave,+New+York,+NY+10023/@40.7796778,-73.9771762,17z/data=!4m5!3m4!1s0x89c2588eadf2ee3f:0xfe931518a1607f9e!8m2!3d40.7795505!4d-73.976963?shorturl=1">Location</a></li>
+				<li class="headlink"><a href="#jumpevent">Events</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="intro">
+		<p>Asian inspired creative cuisine, cocktails, brunch and beverage. Located steps away from Central Park, Beacon Theater, and the American Natural History Museum.</p>
+	</div>
+
+	<div class="space1">	
+	</div>
+
+	<div class="hours">
+		<h2><strong>Hours</strong></h2>
+		<ul>
+			<h3>Happy Hour:</h3>
+				<li>Monday-Friday: 4pm - 6pm</li>
+
+				<br>
+
+			<h3>Full Menu:</h3>
+				<li>Monday-Thursday: 5pm - 10pm</li>
+				<li>Friday: 5pm - 11pm</li>
+				<li>Saturday: 11:30am - 11pm</li>
+				<li>Sunday: 11:30am - 11pm</li>
+
+				<br>
+
+			<h3>Brunch Specials:</h3>
+				<li>Saturday & Sunday: 11:30am - 4pm</li>
+		</ul>
+	</div>
+
+	<div class="twoform">
+		<div class="maps">
+			<h2>Location</h2>
+			<div>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3021.197236917737!2d-73.9771762!3d40.7796778!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2588eadf2ee3f%3A0xfe931518a1607f9e!2s329%20Columbus%20Ave%2C%20New%20York%2C%20NY%2010023!5e0!3m2!1sen!2sus!4v1698983566032!5m2!1sen!2sus" width="400" height="500" style="border: 3px solid black;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+		</div>
+
+		<div id="jumpres" class="res">
+			<h2>Make a Reservation</h2>
+				<form>
+					<div class="firstname">
+						<label>First Name: </label>
+						<input type="text" size="10" />
+					</div>
+					<p>
+						<label>Last name: </label>
+						<input type="text" size="10" maxlength="50" />
+					</p>
+					<p>
+						<label for="phone">Phone Number: </label>
+						<input id="phone" name="phonenumber" type="text" />
+					</p>
+		    		<p>
+		      			<label>Number of People: </label>
+		      			<input type="text" />
+		   	 		</p>
+					<p>
+		      			<label for="timeslots">Arrival Time: </label>
+		      			<select id="timeslots" name="timeslots">
+		        			<option value="202112071800">Tue, 12/7/2021 6pm</option>
+					        <option value="202112071900">Tue, 12/7/2021 7pm</option>
+					        <option value="202112072000">Tue, 12/7/2021 8pm</option>
+					        <option value="202112072100">Tue, 12/7/2021 9pm</option>
+					        <option value="202112071800">Tue, 12/7/2021 6pm</option>
+					        <option value="202112071900">Tue, 12/7/2021 7pm</option>
+					        <option value="202112072000">Tue, 12/7/2021 8pm</option>
+					        <option value="202112072100">Tue, 12/7/2021 9pm</option>
+		      			</select>
+		    		</p>
+		    		<div>
+		      			<input type="submit" value="Make Reservation" />
+		    		</div>
+		    	</form>
+		</div>
+	</div>
+
+	<div class="space2">	
+	</div>
+
+	<div id="jumpevent" class="event">
+		<h2><strong>Private Dining & Events</strong></h2>
+
+		<h3>Special Events</h3>
+
+		<p>With two levels of dining and a bar on each floor, the restaurant offers seating for up to 220 guests within approximately 5,000 square-footage. Upon entry into the restaurant through a glass entryway is a 24- seat bar for guests to enjoy a drink, snack, or full dinner.</p>
+
+		<br>
+
+		<p>There are multiple areas of the restaurant that can host private and semi-private events as the restaurant boasts two semi-private rooms that both seat 20 guests, as well as the upstairs Mezzanine level, which seats up to 50 and 8 at the bar. Seating will be available outdoors seasonally.</p>
+
+		<h3>Cocktail Parties, Receptions, Buyouts</h3>
+
+		<p>We are pleased to offer our services for your next occasions. Book our entire restaurant for a special evening, catered just for you and your guests. Let us bring the ASSET experience to your wedding, birthdays and other large events.</p>
+
+		<p>Inquire below or contact us at +1 212 517 1987</p>
+
+		<a href="#"><span class="button">Inquire</span></a>
+	</div>
+
+	<div class="space3">	
+	</div>
+
+	<footer>
+		<div class="social">
+			<p>Social Media: </p>
+			<a href="https://www.instagram.com/assetrestaurant/"><img src="instagram.png"></a>
+			<a href="#"><img src="twt.png"></a>
+			<a href="#"><img src="facebook.png"></a>
+			<a href="https://www.yelp.com/biz/asset-new-york?osq=asset"><img src="yelp.png"></a>
+		</div>
+		<div>
+			<p><a href="https://www.google.com/maps/place/329+Columbus+Ave,+New+York,+NY+10023/@40.7796778,-73.9771762,17z/data=!4m5!3m4!1s0x89c2588eadf2ee3f:0xfe931518a1607f9e!8m2!3d40.7795505!4d-73.976963?shorturl=1">329 Columbus Ave, New York, NY </a>| +212 517 1987</p>
+		</div>
+	</footer>
+</main>
+</body>
+</html>
